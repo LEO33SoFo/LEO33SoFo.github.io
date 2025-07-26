@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adresa personale e Sofos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover" />
+  <title>Adresa e Sofos</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="testimage.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="testimage.png" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" />
   <style>
     body {
-      font-family: sans-serif;
-      margin: 2em;
-      background-color: #121212;
-      color: #e0e0e0;
+      background: #dadada;
+      font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
     }
-    header {
-      background-color: #1f1f1f;
-      color: #ffffff;
-      padding: 1em;
-      border-radius: 6px;
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #666;
     }
-    main {
-      margin-top: 2em;
+    .rainbowText {
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 191, 0), rgb(128, 255, 0), rgb(0, 255, 64), rgb(0, 255, 255), rgb(0, 64, 255), rgb(128, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: move 45s linear infinite;
     }
-    footer {
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #888;
-      border-top: 1px solid #333;
-      padding-top: 1em;
+    @keyframes move {
+      to {
+        background-position: 4500vh;
+      }
     }
     a {
-      color: #58a6ff;
+      color: #399ae5;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #206ba4;
+    }
+    hr {
+      margin: 20px auto;
+    }
+    footer {
+      font-size: 12px;
+      color: #777;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Adresa personale e Sofos</h1>
-    <p>Një adresë sa për të thënë.</p>
-  </header>
-  <main>
-    <p>Që të mos ta lë faqen kryesore bosh, kjo faqe e thjeshtë u gjenerua.</p>
-  </main>
+  <h1 class="rainbowText">Adresa e Sofos</h1>
+  <hr style="width:50%" />
+  <div>
+    <p>Adresë personale e imja. Asnjë gjë e rëndësishme për publikun.&nbsp;&nbsp;<img alt="" style="vertical-align:middle" src="testimage.png" /></p>
+    <p>Mund të më gjeni në <a href="https://www.reddit.com/user/LEO33SoFo/" target="_blank">Reddit</a>.&nbsp;&nbsp;<img alt="" style="vertical-align:middle" src="testimage.png" /></p>
+    <p>Parametrat e kompjuterit tim mund t'i gjeni <a href="https://files.catbox.moe/n8mwnb.png" target="_blank">këtu</a>.&nbsp;&nbsp;<img alt="" style="vertical-align:middle" src="testimage.png" /></p>
+    <p><img alt="" style="vertical-align:middle" src="testimage.png" />&nbsp;&nbsp;Zotërues krenar i një PlayStation&reg;
+      <a href="https://files.catbox.moe/bxiw2i.png" target="_blank">1</a>,
+      <a href="https://files.catbox.moe/0kn53e.png" target="_blank">2</a>,
+      <a href="https://files.catbox.moe/tgt23y.png" target="_blank">3</a> dhe
+      <a href="https://files.catbox.moe/uejnkr.png" target="_blank">4</a>.
+      &nbsp;&nbsp;<img alt="" style="vertical-align:middle" src="testimage.png" />
+    </p>
+    <p>
+      <img alt="" style="vertical-align:middle" src="testimage.png" />&nbsp;&nbsp;Krijuar nga vet unë. &copy; 2022.&nbsp;&nbsp;<img alt="" style="vertical-align:middle" src="testimage.png" />
+    </p>
+  </div>
   <footer>
-    <p>Kjo faqe është e hostuar në <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+    <p>Kjo faqe është e hostuar në <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
   </footer>
 </body>
 </html>
